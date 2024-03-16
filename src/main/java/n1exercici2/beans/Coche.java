@@ -6,29 +6,16 @@ public class Coche {
 	private final int POTENCIA = 1000;
 	
 	
-	//El valor de los atributos con la marca final no es modificable.
-	//Por tanto, MARCA y POTENCIA no pueden reasignarse en el constructor.
-//	public Coche(String marca, String modelo, int potencia) {
-//		super();
-//		this.MARCA = marca;
-//		Coche.modelo = modelo;
-//		this.POTENCIA = potencia;
-//	}
 	
 	public Coche() {
 		super();	
 	}
 	
-	//Se puede inicializar modelo porque es el único atributo marcado únicamente como estático.
-	//Aunque MARCA también es estático, está marcado como final y no es modificable.
 	public Coche(String modelo) {
 		super();
 		Coche.modelo = modelo;
 	}
-//----- getters y setters -----------------------------------------
-	
-	//El valor de los atributos con la marca final no es modificable.
-	//Por tanto, MARCA y POTENCIA no admiten métodos setters.
+
 	
 	public static String getModelo() {
 		return modelo;
@@ -46,14 +33,7 @@ public class Coche {
 		Coche.modelo = modelo;
 	}
 	
-//	public final void setMarca(String marca) {
-//		MARCA = marca;
-//	}
-//	
-//	public final void setPOTENCIA(int potencia) {
-//		POTENCIA = potencia;
-//	}
-//-----------------------------------------------------------------
+
 	
 	public void acelerar() {
 		
